@@ -20,55 +20,64 @@ class CustomAppBar extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            child: IconButton(
-              icon: Icon(Icons.person),
-              color: kPrimaryColor,
-              onPressed: () {},
-            ),
-          ),
-          SizedBox(width: 5),
-          Expanded(
-            child: Text(
-              'e2517',
-              style: TextStyle(
+      child: Stack(
+        children: [
+          Row(
+            children: [
+              Flexible(
+                child: IconButton(
+                  icon: Icon(Icons.person),
                   color: kPrimaryColor,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold),
-            ),
+                  onPressed: () {},
+                ),
+              ),
+              SizedBox(width: 5),
+              Flexible(
+                child: Text(
+                  'e2517',
+                  style: TextStyle(
+                      color: kPrimaryColor,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
           ),
-          Spacer(),
-          Expanded(
-            child: MenuItem(
-              title: "Home",
-              press: () {},
-            ),
-          ),
-          Expanded(
-            child: MenuItem(
-              title: "about",
-              press: () {},
-            ),
-          ),
-          Expanded(
-            child: MenuItem(
-              title: "Contact",
-              press: () {},
-            ),
-          ),
-          Expanded(
-            child: MenuItem(
-              title: "Login",
-              press: () {},
-            ),
-          ),
-          Expanded(
-            child: DefaultButton(
-              text: "Get Started",
-              press: () {},
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Flexible(
+                child: MenuItem(
+                  title: "Home",
+                  press: () {},
+                ),
+              ),
+              Flexible(
+                child: MenuItem(
+                  title: "about",
+                  press: () {},
+                ),
+              ),
+              Flexible(
+                child: MenuItem(
+                  title: "Contact",
+                  press: () {},
+                ),
+              ),
+              Flexible(
+                flex: 0,
+                child: MenuItem(
+                  title: "Login",
+                  press: () {},
+                ),
+              ),
+              Flexible(
+                child: DefaultButton(
+                  text: "Get Started",
+                  press: () {},
+                ),
+              ),
+            ],
           ),
         ],
       ),
