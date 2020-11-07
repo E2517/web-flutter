@@ -1,7 +1,7 @@
+import 'package:e2517/utils/colors_utils.dart';
+import 'package:e2517/views/default_bottom_views.dart';
+import 'package:e2517/views/menu_item_views.dart';
 import 'package:flutter/material.dart';
-import 'package:webflutter/utils/colors_utils.dart';
-import 'package:webflutter/views/default_bottom_views.dart';
-import 'package:webflutter/views/menu_item_views.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
