@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webflutter/utils/colors_utils.dart';
 import 'package:webflutter/views/default_bottom_views.dart';
 import 'package:webflutter/views/menu_item_views.dart';
 
@@ -21,12 +22,10 @@ class CustomAppBar extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          CircleAvatar(
-            child: Image.asset(
-              "assets/images/logo.png",
-              height: 25,
-              alignment: Alignment.topCenter,
-            ),
+          IconButton(
+            icon: Icon(Icons.person),
+            color: kPrimaryColor,
+            onPressed: () {},
           ),
           SizedBox(width: 5),
           Text(
