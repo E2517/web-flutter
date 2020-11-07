@@ -29,8 +29,11 @@ class CustomAppBar extends StatelessWidget {
           ),
           SizedBox(width: 5),
           Text(
-            "Foodi".toUpperCase(),
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            'e2517',
+            style: TextStyle(
+                color: kPrimaryColor,
+                fontSize: 22,
+                fontWeight: FontWeight.bold),
           ),
           Spacer(),
           MenuItem(
