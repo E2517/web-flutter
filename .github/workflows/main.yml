@@ -15,13 +15,12 @@ jobs:
         with:
           channel: 'dev'
 
-      - run: flutter config --enable-web
-      - run: flutter pub get
-      - run: flutter build web --release
+      - run: |
+         flutter config --enable-web
+         flutter pub get
+         flutter build web --release
       
       - run: cp -R build/web/* public/
-      
-      - run: --project flutter---web
       
       - uses: w9jds/firebase-action@master 
       
