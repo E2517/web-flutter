@@ -22,39 +22,53 @@ class CustomAppBar extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          IconButton(
-            icon: Icon(Icons.person),
-            color: kPrimaryColor,
-            onPressed: () {},
+          Expanded(
+            child: IconButton(
+              icon: Icon(Icons.person),
+              color: kPrimaryColor,
+              onPressed: () {},
+            ),
           ),
           SizedBox(width: 5),
-          Text(
-            'e2517',
-            style: TextStyle(
-                color: kPrimaryColor,
-                fontSize: 22,
-                fontWeight: FontWeight.bold),
+          Expanded(
+            child: Text(
+              'e2517',
+              style: TextStyle(
+                  color: kPrimaryColor,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
           Spacer(),
-          MenuItem(
-            title: "Home",
-            press: () {},
+          Expanded(
+            child: MenuItem(
+              title: "Home",
+              press: () {},
+            ),
           ),
-          MenuItem(
-            title: "about",
-            press: () {},
+          Expanded(
+            child: MenuItem(
+              title: "about",
+              press: () {},
+            ),
           ),
-          MenuItem(
-            title: "Contact",
-            press: () {},
+          Expanded(
+            child: MenuItem(
+              title: "Contact",
+              press: () {},
+            ),
           ),
-          MenuItem(
-            title: "Login",
-            press: () {},
+          Expanded(
+            child: MenuItem(
+              title: "Login",
+              press: () {},
+            ),
           ),
-          DefaultButton(
-            text: "Get Started",
-            press: () {},
+          Expanded(
+            child: DefaultButton(
+              text: "Get Started",
+              press: () {},
+            ),
           ),
         ],
       ),
