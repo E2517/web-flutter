@@ -8,8 +8,6 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-    print('dimension $size');
-
     if (size.width < 700) {
       return Container(
         margin: EdgeInsets.all(20),
