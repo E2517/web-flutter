@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:webflutter/views/home_views.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,21 +10,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Happy Coding with Flutter',
       theme: ThemeData.dark(),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('FULL STAK DEVELOPER',
-              style: TextStyle(fontSize: 36.0, color: Colors.yellow)),
-          centerTitle: true,
-        ),
-        body: Center(
-          child: Container(
-            child: Text(
-              'e2517',
-              style: TextStyle(fontSize: 40.0, color: Colors.yellow),
-            ),
-          ),
-        ),
-      ),
+      initialRoute: 'home',
+      routes: {
+        'home': (BuildContext context) => Home(),
+      },
+      onUnknownRoute: (RouteSettings settings) {
+        print('Route not founded: ${settings.name}');
+        return MaterialPageRoute(builder: (context) => Home());
+      },
     );
   }
 }
