@@ -67,11 +67,9 @@ firebase deploy
 
 ## e2517
 
-![web][]
-
 
 [logo]: https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-lockup.png
-[web]: 
+
 [firebase]: https://github.com/E2517/images/blob/main/images/flutter-web/firebase.png
 
 
