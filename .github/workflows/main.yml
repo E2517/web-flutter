@@ -20,9 +20,12 @@ jobs:
       - run: flutter build web --release
       
       - run: cp -R build/web/* public/
+      - run: firebase use add
       
       - uses: w9jds/firebase-action@master
+      
         with:
           args: deploy --only hosting
+        
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
