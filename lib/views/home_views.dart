@@ -1,34 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:webflutter/views/appbar_views.dart';
+import 'package:webflutter/views/body_views.dart';
 
-class Home extends StatelessWidget {
+class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        title: Text('FULL STAK DEVELOPER',
-            style: TextStyle(fontSize: 36.0, color: Colors.yellow)),
-        centerTitle: true,
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          Container(
-            child: Text(
-              'e2517',
-              style: TextStyle(fontSize: 40.0, color: Colors.yellow),
-            ),
+      body: Container(
+        height: size.height,
+        width: size.width,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/bg.jpg"),
+            fit: BoxFit.cover,
           ),
-          ListTile(
-              leading: Icon(Icons.person_add),
-              title: Text('Flutter Developer'),
-              subtitle: Text('Bloc Pattern'),
-              trailing: IconButton(
-                icon: Icon(Icons.arrow_back),
-                onPressed: () {
-                  Navigator.pushNamed(context, 'blog');
-                },
-              )),
-        ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            CustomAppBar(),
+            Spacer(),
+            Body(),
+            Spacer(
+              flex: 2,
+            ),
+          ],
+        ),
       ),
     );
   }
