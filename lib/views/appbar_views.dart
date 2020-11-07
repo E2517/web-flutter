@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
         children: <Widget>[
           CircleAvatar(
             child: Image.asset(
-              "assets/images/logo.jpg",
+              "assets/images/logo.png",
               height: 25,
               alignment: Alignment.topCenter,
             ),
