@@ -21,7 +21,7 @@ jobs:
       
       - run: cp -R build/web/* public/
       
-      - uses: w9jds/firebase-action@master
+      - uses: w9jds/firebase-action@master --project <flutter---web>
       
         with:
           args: deploy --only hosting
