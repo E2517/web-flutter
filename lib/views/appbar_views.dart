@@ -56,12 +56,6 @@ class CustomAppBar extends StatelessWidget {
                     press: () {},
                   ),
                 ),
-                Flexible(
-                  child: DefaultButton(
-                    text: "Get Started",
-                    press: () {},
-                  ),
-                ),
               ],
             ),
           ],
