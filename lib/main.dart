@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       initialRoute: 'home',
       routes: {
-        'home': (BuildContext context) => Home(),
+        'home': (BuildContext context) => HomeView(),
       },
       onUnknownRoute: (RouteSettings settings) {
         print('Route not founded: ${settings.name}');
-        return MaterialPageRoute(builder: (context) => Home());
+        return MaterialPageRoute(builder: (context) => HomeView());
       },
     );
   }
