@@ -3,7 +3,7 @@ name: Firebase Hosting Continuous Deployment
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
