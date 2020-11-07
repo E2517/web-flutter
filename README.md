@@ -1,4 +1,4 @@
-# [![Flutter logo][]][flutter.dev]
+# ![logo][]
 
 A Flutter Web 
 
@@ -70,7 +70,7 @@ firebase deploy
 ![web][]
 
 
-[flutter logo]: https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-lockup.png
+[logo]: https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-lockup.png
 [web]: https://github.com/E2517/images/blob/main/images/translator/develop.png
 [firebase]: https://github.com/E2517/images/blob/main/images/translator/develop.png
 
