@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:e2517/utils/alert_utils.dart' as alert;
 import 'package:e2517/utils/colors_utils.dart';
 import 'package:e2517/views/default_bottom_views.dart';
 import 'package:e2517/views/menu_item_views.dart';
@@ -25,7 +26,9 @@ class CustomAppBar extends StatelessWidget {
         ),
         child: DefaultButton(
           text: "Login",
-          press: () {},
+          press: () {
+            alert.showAlert(context, 'Firebase Authentication coming soon');
+          },
         ),
       );
     } else {
