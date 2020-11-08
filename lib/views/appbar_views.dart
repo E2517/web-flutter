@@ -23,6 +23,26 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
+        child: DefaultButton(
+          text: "Login",
+          press: () {},
+        ),
+      );
+    } else {
+      return Container(
+        margin: EdgeInsets.all(20),
+        padding: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(46),
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0, -2),
+              blurRadius: 30,
+              color: Colors.black.withOpacity(0.16),
+            ),
+          ],
+        ),
         child: Stack(
           children: [
             Row(
@@ -50,9 +70,33 @@ class CustomAppBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 Flexible(
+                  child: MenuItem(
+                    title: "Home",
+                    press: () {},
+                  ),
+                ),
+                Flexible(
+                  child: MenuItem(
+                    title: "about",
+                    press: () {},
+                  ),
+                ),
+                Flexible(
+                  child: MenuItem(
+                    title: "Contact",
+                    press: () {},
+                  ),
+                ),
+                Flexible(
                   flex: 0,
                   child: MenuItem(
                     title: "Login",
+                    press: () {},
+                  ),
+                ),
+                Flexible(
+                  child: DefaultButton(
+                    text: "Get Started",
                     press: () {},
                   ),
                 ),
@@ -62,81 +106,5 @@ class CustomAppBar extends StatelessWidget {
         ),
       );
     }
-    return Container(
-      margin: EdgeInsets.all(20),
-      padding: EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(46),
-        boxShadow: [
-          BoxShadow(
-            offset: Offset(0, -2),
-            blurRadius: 30,
-            color: Colors.black.withOpacity(0.16),
-          ),
-        ],
-      ),
-      child: Stack(
-        children: [
-          Row(
-            children: [
-              Flexible(
-                child: IconButton(
-                  icon: Icon(Icons.person),
-                  color: kPrimaryColor,
-                  onPressed: () {},
-                ),
-              ),
-              SizedBox(width: 5),
-              Flexible(
-                child: Text(
-                  'e2517',
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Flexible(
-                child: MenuItem(
-                  title: "Home",
-                  press: () {},
-                ),
-              ),
-              Flexible(
-                child: MenuItem(
-                  title: "about",
-                  press: () {},
-                ),
-              ),
-              Flexible(
-                child: MenuItem(
-                  title: "Contact",
-                  press: () {},
-                ),
-              ),
-              Flexible(
-                flex: 0,
-                child: MenuItem(
-                  title: "Login",
-                  press: () {},
-                ),
-              ),
-              Flexible(
-                child: DefaultButton(
-                  text: "Get Started",
-                  press: () {},
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
   }
 }
