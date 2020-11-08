@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:e2517/views/appbar_views.dart';
 import 'package:e2517/views/body_views.dart';
-import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
   @override
