@@ -1,12 +1,14 @@
 {
-    "name": "webflutter",
-    "short_name": "webflutter",
-    "start_url": ".",
+    "name": "Flutter Web Responsive",
+    "short_name": "Flutter Web",
+    "scope": "/",
+    "start_url": "/home",
     "display": "standalone",
     "background_color": "#b9fa23",
     "theme_color": "#6f86be",
     "description": "Flutter web responsive, routes and CI/CD with GitHub Actions to deploy on Firebase",
     "orientation": "portrait-primary",
+
     "prefer_related_applications": false,
     "icons": [{
             "src": "icons/Icon-192.png",
