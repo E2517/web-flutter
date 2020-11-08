@@ -74,33 +74,36 @@ class CustomAppBar extends StatelessWidget {
               children: <Widget>[
                 Flexible(
                   child: MenuItem(
-                    title: "Home",
+                    title: 'home',
                     press: () {},
                   ),
                 ),
                 Flexible(
                   child: MenuItem(
-                    title: "about",
+                    title: 'About',
                     press: () {},
                   ),
                 ),
                 Flexible(
                   child: MenuItem(
-                    title: "Contact",
+                    title: 'contact',
                     press: () {},
                   ),
                 ),
                 Flexible(
                   flex: 0,
                   child: MenuItem(
-                    title: "Login",
+                    title: 'login',
                     press: () {},
                   ),
                 ),
                 Flexible(
                   child: DefaultButton(
-                    text: "Get Started",
-                    press: () {},
+                    text: 'Get Started',
+                    press: () {
+                      alert.showAlert(
+                          context, 'Firebase Authentication coming soon');
+                    },
                   ),
                 ),
               ],

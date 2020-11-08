@@ -51,7 +51,7 @@ class Body extends StatelessWidget {
                   ),
                   SizedBox(width: 15),
                   Text(
-                    "Get Started".toUpperCase(),
+                    'Flutter Developer'.toUpperCase(),
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

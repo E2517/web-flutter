@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
         width: size.width,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/bg.jpg"),
+            image: AssetImage('assets/images/bg.jpg'),
             fit: BoxFit.cover,
           ),
         ),
