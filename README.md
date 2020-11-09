@@ -25,6 +25,10 @@ flutter pub get
 ```
 
 ```
+pub cache repair
+```
+
+```
 flutter run -d chrome
 ```
 
