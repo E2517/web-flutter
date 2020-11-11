@@ -27,7 +27,7 @@ class CustomAppBar extends StatelessWidget {
         child: DefaultButton(
           text: "Login",
           press: () {
-            alert.showAlert(context, 'Firebase Authentication coming soon');
+            alert.ShowDialogView().showAlert(context);
           },
         ),
       );
@@ -75,7 +75,9 @@ class CustomAppBar extends StatelessWidget {
                 Flexible(
                   child: MenuItem(
                     title: 'home',
-                    press: () {},
+                    press: () {
+                      Navigator.pushNamed(context, 'home');
+                    },
                   ),
                 ),
                 Flexible(
@@ -94,16 +96,15 @@ class CustomAppBar extends StatelessWidget {
                   flex: 0,
                   child: MenuItem(
                     title: 'login',
-                    press: () {},
+                    press: () {
+                      alert.ShowDialogView().showAlert(context);
+                    },
                   ),
                 ),
                 Flexible(
                   child: DefaultButton(
                     text: 'Get Started',
-                    press: () {
-                      alert.showAlert(
-                          context, 'Firebase Authentication coming soon');
-                    },
+                    press: () {},
                   ),
                 ),
               ],
