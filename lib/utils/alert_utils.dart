@@ -21,26 +21,37 @@ class ShowDialogView {
   }
 
   Widget _loginForm(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return Column(
       children: <Widget>[
-        Column(
-          children: <Widget>[
-            Text('Login', style: TextStyle(fontSize: 25.0)),
-            SizedBox(height: 15.0),
-            _createEmail(),
-            SizedBox(height: 30.0),
-            _createPassword(),
-            SizedBox(height: 30.0),
-            _createButton(),
-          ],
+        Padding(
+          padding: size.width > 700
+              ? EdgeInsets.only(left: 80.0, right: 80.0)
+              : EdgeInsets.only(left: 0, right: 0),
+          child: Column(
+            children: <Widget>[
+              Text('Login', style: TextStyle(fontSize: 25.0)),
+              SizedBox(height: 15.0),
+              _createEmail(context),
+              SizedBox(height: 30.0),
+              _createPassword(context),
+              SizedBox(height: 30.0),
+              _createButton(),
+            ],
+          ),
         ),
       ],
     );
   }
 
-  Widget _createEmail() {
+  Widget _createEmail(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 40.0),
+      width: double.infinity,
+      padding: size.width > 700
+          ? EdgeInsets.symmetric(horizontal: 0.0)
+          : EdgeInsets.symmetric(horizontal: 40.0),
       child: TextField(
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
@@ -52,9 +63,13 @@ class ShowDialogView {
     );
   }
 
-  Widget _createPassword() {
+  Widget _createPassword(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 40.0),
+      width: double.infinity,
+      padding: size.width > 700
+          ? EdgeInsets.symmetric(horizontal: 0.0)
+          : EdgeInsets.symmetric(horizontal: 40.0),
       child: TextField(
         obscureText: true,
         keyboardType: TextInputType.emailAddress,

@@ -24,11 +24,38 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        child: DefaultButton(
-          text: "Login",
-          press: () {
-            alert.ShowDialogView().showAlert(context);
-          },
+        child: Stack(
+          children: [
+            IconButton(
+              icon: Icon(Icons.person),
+              color: kPrimaryColor,
+              onPressed: () {},
+            ),
+            Positioned(
+              left: 45.0,
+              top: 7.0,
+              child: Text(
+                'e2517',
+                style: TextStyle(
+                    color: kPrimaryColor,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Flexible(
+                  child: DefaultButton(
+                    text: 'Login',
+                    press: () {
+                      alert.ShowDialogView().showAlert(context);
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       );
     } else {
