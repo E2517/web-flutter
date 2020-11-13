@@ -26,10 +26,9 @@ class CustomAppBar extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            IconButton(
-              icon: Icon(Icons.person),
-              color: kPrimaryColor,
-              onPressed: () {},
+            CircleAvatar(
+              radius: 18,
+              backgroundImage: AssetImage('assets/images/avatar.png'),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

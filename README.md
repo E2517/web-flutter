@@ -2,7 +2,7 @@
 
 ![flutter-giff][]
 
-A Flutter Web 
+A Flutter Web
 
 ## Flutter commnads
 
@@ -34,6 +34,9 @@ pub cache repair
 flutter run -d chrome
 ```
 
+Failed to establish connection with the application instance in Chrome.
+This can happen if the websocket connection used by the web tooling is unable to correctly establish a connection, for example due to a firewall.
+
 ```
 flutter run -d chrome --release
 ```
@@ -53,7 +56,6 @@ flutter clean
 ```
 flutter build web
 ```
-
 
 ## GitHub Actions
 
@@ -77,20 +79,6 @@ firebase deploy
 
 ## e2517
 
-
 [logo]: https://github.com/E2517/images/blob/main/images/flutter-web/flutterweb.png
 [firebase]: https://github.com/E2517/images/blob/main/images/flutter-web/firebase.png
-[flutter-giff]:https://github.com/E2517/images/blob/main/images/flutter-web/flutterweb.gif
-
-
-
-
-
-
-
-
-
-
-
-
-
+[flutter-giff]: https://github.com/E2517/images/blob/main/images/flutter-web/flutterweb.gif
