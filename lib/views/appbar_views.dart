@@ -33,7 +33,6 @@ class CustomAppBar extends StatelessWidget {
             ),
             Positioned(
               left: 45.0,
-              top: 7.0,
               child: Text(
                 'e2517',
                 style: TextStyle(
