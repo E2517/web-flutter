@@ -31,16 +31,6 @@ class CustomAppBar extends StatelessWidget {
               color: kPrimaryColor,
               onPressed: () {},
             ),
-            Positioned(
-              left: 45.0,
-              child: Text(
-                'e2517',
-                style: TextStyle(
-                    color: kPrimaryColor,
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -81,16 +71,6 @@ class CustomAppBar extends StatelessWidget {
                     icon: Icon(Icons.person),
                     color: kPrimaryColor,
                     onPressed: () {},
-                  ),
-                ),
-                SizedBox(width: 5),
-                Flexible(
-                  child: Text(
-                    'e2517',
-                    style: TextStyle(
-                        color: kPrimaryColor,
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold),
                   ),
                 ),
               ],
