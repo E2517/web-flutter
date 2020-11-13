@@ -109,7 +109,7 @@ class CustomAppBar extends StatelessWidget {
                 ),
                 Flexible(
                   child: DefaultButton(
-                    text: 'Get Started',
+                    text: 'Flutter',
                     press: () {},
                   ),
                 ),
