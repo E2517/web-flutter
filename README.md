@@ -34,6 +34,10 @@ pub cache repair
 flutter run -d chrome
 ```
 
+```
+flutter run -d chrome --release
+```
+
 A unit test tests a single function, method, or class.
 A widget test (in other UI frameworks referred to as component test) tests a single widget.
 An integration test tests a complete app or a large part of an app.
