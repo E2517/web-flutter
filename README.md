@@ -2,7 +2,9 @@
 
 ![flutter-giff][]
 
-A Flutter Web
+## Performance
+
+![performance][]
 
 ## Flutter commnads
 
@@ -82,3 +84,4 @@ firebase deploy
 [logo]: https://github.com/E2517/images/blob/main/images/flutter-web/flutterweb.png
 [firebase]: https://github.com/E2517/images/blob/main/images/flutter-web/firebase.png
 [flutter-giff]: https://github.com/E2517/images/blob/main/images/flutter-web/flutterweb.gif
+[performance]: https://github.com/E2517/images/blob/main/images/flutter-web/terminal.png
