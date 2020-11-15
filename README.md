@@ -56,7 +56,7 @@ flutter clean
 ```
 
 ```
-flutter build web
+  flutter build web --release
 ```
 
 ## GitHub Actions
