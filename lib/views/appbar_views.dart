@@ -24,24 +24,18 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        child: Stack(
+        child: Row(
           children: [
             CircleAvatar(
               radius: 18,
               backgroundImage: AssetImage('assets/images/avatar.png'),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Flexible(
-                  child: DefaultButton(
-                    text: 'Login',
-                    press: () {
-                      alert.ShowDialogView().showAlert(context);
-                    },
-                  ),
-                ),
-              ],
+            Spacer(),
+            DefaultButton(
+              text: 'Login',
+              press: () {
+                alert.ShowDialogView().showAlert(context);
+              },
             ),
           ],
         ),
@@ -61,58 +55,37 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        child: Stack(
+        child: Row(
           children: [
-            Row(
-              children: [
-                Flexible(
-                  child: IconButton(
-                    icon: Icon(Icons.person),
-                    color: kPrimaryColor,
-                    onPressed: () {},
-                  ),
-                ),
-              ],
+            IconButton(
+              icon: Icon(Icons.person),
+              color: kPrimaryColor,
+              onPressed: () {},
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                Flexible(
-                  child: MenuItem(
-                    title: 'home',
-                    press: () {
-                      Navigator.pushNamed(context, 'home');
-                    },
-                  ),
-                ),
-                Flexible(
-                  child: MenuItem(
-                    title: 'About',
-                    press: () {},
-                  ),
-                ),
-                Flexible(
-                  child: MenuItem(
-                    title: 'contact',
-                    press: () {},
-                  ),
-                ),
-                Flexible(
-                  flex: 0,
-                  child: MenuItem(
-                    title: 'login',
-                    press: () {
-                      alert.ShowDialogView().showAlert(context);
-                    },
-                  ),
-                ),
-                Flexible(
-                  child: DefaultButton(
-                    text: 'Flutter',
-                    press: () {},
-                  ),
-                ),
-              ],
+            Spacer(),
+            MenuItem(
+              title: 'home',
+              press: () {
+                Navigator.pushNamed(context, 'home');
+              },
+            ),
+            MenuItem(
+              title: 'About',
+              press: () {},
+            ),
+            MenuItem(
+              title: 'contact',
+              press: () {},
+            ),
+            MenuItem(
+              title: 'login',
+              press: () {
+                alert.ShowDialogView().showAlert(context);
+              },
+            ),
+            DefaultButton(
+              text: 'Flutter',
+              press: () {},
             ),
           ],
         ),
