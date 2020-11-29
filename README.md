@@ -56,7 +56,7 @@ flutter clean
 ```
 
 ```
-  flutter build web --release
+flutter build web --release
 ```
 
 ## GitHub Actions
@@ -80,6 +80,12 @@ firebase deploy
 ![firebase][]
 
 ## e2517
+
+To sign with GPG
+
+```
+git commit -S -m "your message"
+```
 
 [logo]: https://github.com/E2517/images/blob/main/images/flutter-web/flutterwebsite.png
 [firebase]: https://github.com/E2517/images/blob/main/images/flutter-web/firebase.png
