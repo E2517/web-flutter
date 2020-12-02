@@ -81,7 +81,7 @@ firebase deploy
 
 ## e2517
 
-To sign with GPG
+To sign with GPG to verify commits
 
 ```
 git commit -S -m "your message"
