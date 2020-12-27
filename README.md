@@ -66,11 +66,11 @@ Error: Not found: 'dart:html' (channet beta)
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
-Temporary solution: remove flutter test from github actions main.yml
-
 ```
 onTap: () => html.window.open('url', 'name')
 ```
+
+Temporary solution: remove flutter test from github actions main.yml
 
 ## GitHub Actions
 
