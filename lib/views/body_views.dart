@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
+
 import 'package:e2517/utils/colors_utils.dart';
 
 class Body extends StatelessWidget {
@@ -50,12 +53,16 @@ class Body extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 15),
-                  Text(
-                    'Flutter Developer'.toUpperCase(),
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 19,
+                  InkWell(
+                    onTap: () => html.window
+                        .open('https://github.com/E2517/web-flutter', 'e2517'),
+                    child: Text(
+                      'Flutter Web'.toUpperCase(),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                      ),
                     ),
                   ),
                   SizedBox(width: 15),

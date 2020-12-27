@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
+
 import 'package:e2517/utils/alert_utils.dart' as alert;
 import 'package:e2517/utils/colors_utils.dart';
 import 'package:e2517/views/default_bottom_views.dart';
@@ -64,19 +67,16 @@ class CustomAppBar extends StatelessWidget {
             ),
             Spacer(),
             MenuItem(
-              title: 'home',
-              press: () {
-                Navigator.pushNamed(context, 'home');
-              },
-            ),
+                title: 'home',
+                press: () => Navigator.pushNamed(context, 'home')),
             MenuItem(
-              title: 'About',
-              press: () {},
-            ),
+                title: 'About',
+                press: () =>
+                    html.window.open('https://github.com/E2517', 'e2517')),
             MenuItem(
-              title: 'contact',
-              press: () {},
-            ),
+                title: 'contact',
+                press: () =>
+                    html.window.open('https://github.com/E2517', 'e2517')),
             MenuItem(
               title: 'login',
               press: () {
@@ -84,9 +84,9 @@ class CustomAppBar extends StatelessWidget {
               },
             ),
             DefaultButton(
-              text: 'Flutter',
-              press: () {},
-            ),
+                text: 'GitHub',
+                press: () =>
+                    html.window.open('https://github.com/E2517', 'e2517')),
           ],
         ),
       );
