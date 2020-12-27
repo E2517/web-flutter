@@ -59,6 +59,17 @@ flutter clean
 flutter build web --release
 ```
 
+## Flutter errors
+
+Error: Not found: 'dart:html' (channet beta)
+
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
+
+```
+onTap: () => html.window.open('url', 'name')
+```
+
 ## GitHub Actions
 
 Create a firebase TOKEN an store in secrets with the name FIREBASE_TOKEN to call it later from Actions
