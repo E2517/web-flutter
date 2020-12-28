@@ -73,6 +73,8 @@ onTap: () => html.window.open('url', 'name')
 Temporary solution: remove flutter test from github actions main.yml
 Final solution: flutter test --platform chrome 
 
+![test][]
+
 ## GitHub Actions
 
 Create a firebase TOKEN an store in secrets with the name FIREBASE_TOKEN to call it later from Actions
@@ -105,3 +107,4 @@ git commit -S -m "your message"
 [firebase]: https://github.com/E2517/images/blob/main/images/flutter-web/firebase.png
 [flutter-giff]: https://github.com/E2517/images/blob/main/images/flutter-web/flutterweb.gif
 [performance]: https://github.com/E2517/images/blob/main/images/flutter-web/terminal.png
+[test]: https://github.com/E2517/images/blob/main/images/flutter-web/fluttertest%20.png
