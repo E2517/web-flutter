@@ -48,7 +48,8 @@ A widget test (in other UI frameworks referred to as component test) tests a sin
 An integration test tests a complete app or a large part of an app.
 
 ```
-flutter test
+flutter test (does not work with web and links to open a browser)
+flutter test --platform chrome 
 ```
 
 ```
