@@ -19,7 +19,7 @@ jobs:
          flutter config --enable-web
          flutter upgrade
          flutter pub get
-         flutter test
+         flutter test --platform chrome
          flutter build web --release
       
       - run: cp -R build/web/* public/
