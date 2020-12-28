@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Web with Flutter',
+      title: 'e2517 | Flutter Web',
       theme: ThemeData.dark(),
       initialRoute: 'home',
       routes: {
