@@ -57,7 +57,7 @@ class Body extends StatelessWidget {
                     onTap: () => html.window
                         .open('https://github.com/E2517/web-flutter', 'e2517'),
                     child: Text(
-                      'Flutter Web'.toUpperCase(),
+                      'Happy coding'.toUpperCase(),
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
