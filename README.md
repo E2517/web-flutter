@@ -71,6 +71,7 @@ onTap: () => html.window.open('url', 'name')
 ```
 
 Temporary solution: remove flutter test from github actions main.yml
+
 Final solution: flutter test --platform chrome 
 
 ![test][]
