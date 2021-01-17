@@ -6,7 +6,7 @@
 
 ![performance][]
 
-## Flutter commnads
+## Flutter commands
 
 ```
 flutter channel beta
